@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <title>Página da Renata - Marcar Horários</title>
+  <link rel="stylesheet" href="css/renata.css">
+  <link rel="stylesheet" href="css/marcar.css">
+  <script src="https://kit.fontawesome.com/a125ffc3d3.js" crossorigin="anonymous"></script>
+
+<!--exibir uma caixinha mostrando que foi enviado-->
+  <script>
+    function exibirNotificacao() {
+      alert("Formulário recebido com sucesso!");
+    }
+    function limparTextoPadrao(input) {
+      if (input.files.length > 0) {
+        // Se algum arquivo for selecionado, limpa o valor do input
+        input.value = '';
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <h1>PAGINA DA RENATA</h1>
+<div class="link-container">
+  <a href="inicio.html" class="link">Inicio</a>
+  <a href="sobremim.html" class="link">Sobre mim</a>
+  <a href="curriculo.html" class="link">Curriculo</a>
+  <a href="citacoes.html" class="link">Citações</a>
+  <a href="hobbies.html" class="link">Hobbies</a>
+  <a href="horarios.html" class="link">Horários</a>
+  <a href="marcarhorarios.html" class="link">Marcar Horários</a>
+</div>
+
+<div class="container">
+	<div class="div1">
+		<form method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" required>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+        <option value="outro">Outro</option>
+      </select>
+    </form>
+	</div>
+
+	<div class="div2">
+		<div class="negrito">Favoritos</div>	  
+		  <a href="https://www.instagram.com/photosbyrin_/" class="icon-link"><span class="texto2">Meu Instagram de Fotos</span>
+		    <i class="fab fa-instagram icon"></i>
+		  </a>
+
+		  <a href="https://www.leagueoflegends.com/pt-br/" class="icon-link"><span class="texto2">League Of Legends</span>
+		    <i class="fas fa-gamepad icon"></i>    
+		  </a>
+
+		  <a href="https://playvalorant.com/pt-br/?gad=1&gclid=CjwKCAjwkeqkBhAnEiwA5U-uM43XVnNvfpRWtZ0T78ZgfM40Y6WQZzvHUvncMFcbYff2Biq7VYiBUxoCsecQAvD_BwE&gclsrc=aw.ds" class="icon-link"><span class="texto2">Valorant</span>
+		    <i class="fas fa-gamepad icon"></i>	    
+		  </a>
+		</div>
+
+	<div class="div3">
+    <form method="POST">
+      <label for="dia">Dia:</label>
+      <input type="date" id="dia" name="dia" required>
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario" required>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+      <br><br>
+      <label for="arquivo">Upload (Caso Necessário):</label>
+      <input type="file" id="arquivo" name="arquivo" class="input-file">      
+      <br>
+      <input type="submit" value="Enviar" onclick="exibirNotificacao()">
+    </form>
+	</div>
+
+	<div class="div4">
+		<a href="mailto:renataunisj@gmail.com" class="contato"><i class="fas fa-envelope"></i></a>
+		<a href="https://github.com/Sweetrin0t7" class="contato"><i class="fab fa-brands fa-github"></i></a>
+		<a href="https://www.linkedin.com/in/renata-oliveira-schäfer/" class="contato"><i class="fab fa-brands fa-linkedin"></i></a>
+	</div>
+</div>
+
+
+  <footer>
+    Feito por Renata
+  </footer>
+
+    
+</body>
+
+</html>

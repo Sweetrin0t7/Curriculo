@@ -1,0 +1,58 @@
+/* ------------------- DIV3 IMAGENS-------------------*/
+.div3 {
+    grid-area: div3;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    border-radius: 10px;
+  }
+  .div3 img {
+    width: 30%;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 800px){
+    .div3 img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 30%;
+      max-width: 90%;
+    }
+  }
+  /* ------------------------ DIV1 ------------------------*/
+.div1 { 
+  grid-area: div1;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.div1 img { 
+  margin: 10px;
+  max-width: 200px;
+  border-radius: 10px;
+}
+.texto{
+  text-align: justify;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@media screen and (min-width: 800px){
+  .div1 {
+    grid-area: div1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .div1 img {
+    margin-left: 20px;
+    width: 600px;
+    max-width: 89%;
+  }
+  .texto{
+    text-align: justify;
+    margin-right: 20px;
+    font-size: max(17px, 2vw);
+  }
+}

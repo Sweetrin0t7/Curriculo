@@ -1,0 +1,39 @@
+.div1 { 
+    grid-area: div1;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .div3 { 
+    grid-area: div3;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .div1 img { 
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+  }
+  @media screen and (min-width: 1000px){
+
+    .div1 { 
+        grid-area: div1;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .div1 img { 
+        margin: auto;
+        padding: 10px;
+        max-width: 400px;
+        border-radius: 20px;
+    }
+  }

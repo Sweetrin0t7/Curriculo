@@ -1,0 +1,31 @@
+.div1 { 
+    grid-area: div1;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3%;
+    border-radius: 10px;
+  }
+  .div3 { 
+    grid-area: div3;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3%;
+    border-radius: 10px;
+  }
+  /* ------------ajeitando o formulario----------*/
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration-color: black;
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+
+  @media screen and (max-width: 600px){
+    .input-file {
+        position: absolute;
+        font-size: 8px;
+      }
+}

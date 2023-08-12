@@ -1,0 +1,53 @@
+.containerh {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+    "div1 div1 div1 div1 div1 div2 div2 div2"
+    "div1 div1 div1 div1 div1 div2 div2 div2"
+    "div1 div1 div1 div1 div1 div2 div2 div2"
+    "div1 div1 div1 div1 div1 div2 div2 div2"
+    "div1 div1 div1 div1 div1 div2 div2 div2"
+    "div1 div1 div1 div1 div1 div4 div4 div4"
+    "div1 div1 div1 div1 div1 div4 div4 div4"
+    "div1 div1 div1 div1 div1 div4 div4 div4"
+  }
+
+.div1 { 
+    grid-area: div1;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+/* ------------ajeitando a tabela----------*/
+table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 90%; 
+    margin: 0 auto;
+    font-size: 50%;
+  }
+  td {
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+    color: black;
+  }
+  th{
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+    color: white;
+    background-color: rgb(24, 22, 22);
+  }
+  table tr:hover{ /* adicionei pra passar o mouse e ficar cinza*/
+    background-color: lightgray; 
+  }
+  @media screen and (max-width: 600px) {
+    table {
+
+      font-size: 7px;
+    }
+  }
